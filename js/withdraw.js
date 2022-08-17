@@ -14,6 +14,11 @@ document.getElementById("withdraw").addEventListener('click', () => {
     
     if (currentBalance <= withdrawAmount) {
         document.getElementById("alart").classList.remove('d-none')
+   
+        setTimeout(() =>{
+            document.getElementById("alart").classList.add('d-none')
+        },3000)
+
         return  
     }
 
@@ -23,7 +28,7 @@ document.getElementById("withdraw").addEventListener('click', () => {
     
         // console.log(mainBalance);
     
-        document.getElementById('currentWithdraw'). withdrawBalance;
+        document.getElementById('currentWithdraw').innerHTML = withdrawBalance;
     
         document.getElementById('currentBalance').innerText = mainBalance;
 
