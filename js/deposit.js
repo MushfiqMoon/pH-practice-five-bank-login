@@ -16,4 +16,5 @@ document.getElementById("deposit").addEventListener('click', () => {
 
     document.getElementById('currentBalance').innerText = mainBalance;
 
-})  
+
+}) 
